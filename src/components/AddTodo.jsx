@@ -26,11 +26,17 @@ function AddTodo({ onNewItem }) {
             type="text"
             placeholder="Enter Todo Here"
             value={todoName}
+            required={true}
             onChange={handleNameChange}
           />
         </div>
         <div className="col-4">
-          <input type="date" value={dueDate} onChange={handleDateChange} />
+          <input
+            type="date"
+            value={dueDate}
+            required={true}
+            onChange={handleDateChange}
+          />
         </div>
         <div className="col-2">
           <button
