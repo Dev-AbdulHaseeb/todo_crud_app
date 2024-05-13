@@ -1,15 +1,15 @@
 {
+  "homepage": "https://Dev-AbdulHaseeb.github.io/todo_crud_app/",
   "name": "crudapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Dev-AbdulHaseeb.github.io/todo_crud_app/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
